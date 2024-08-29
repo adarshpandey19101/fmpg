@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Properties</title>
+    <link rel="stylesheet" href="/css/readmorestyle.css">
+</head>
+<body>
+    <div class="property">
+        <h1>Property Details</h1>
+        <h2><%= properties.name %></h2>
+        <div class="property-card" id="properties">
+            <!-- <base href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/"> -->
+    
+            <div id="slider">
+                <figure>
+                    <!-- <img src="austin-fireworks.jpg" alt onclick="openFullScreen(this)">
+                    <img src="taj-mahal_copy.jpg" alt onclick="openFullScreen(this)">
+                    <img src="ibiza.jpg" alt onclick="openFullScreen(this)">
+                    <img src="ankor-wat.jpg" alt onclick="openFullScreen(this)">
+                    <img src="austin-fireworks.jpg" alt onclick="openFullScreen(this)"> -->
+                    <% properties.images.forEach(function(image) { %>
+                        <img src="<%= image %>" alt="Image of <%= properties.name %>" onclick="openFullScreen(this)">
+                    <% }) %>
+                </figure>
+                <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="next" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+
+            <p><strong>Description:</strong> <%= properties.description %></p>
+            
+            <p><strong>Type:</strong> <%= properties.type %></p>
+            <div class="amenities">
+                <strong>Amenities:</strong>
+                <% properties.amenities.forEach(function(amenity) { %>
+                    <span class="amenity"><%= amenity %></span>
+                <% }) %>
+            </div>
+
+           
+
+            <!-- Room Type Selection -->
+            <div class="room-selection">
+                <label for="roomType">Select Room Type:</label>
+                <select id="roomType" onchange="updateRoomIDAndPrice()">
+                    <% properties.rooms.forEach(function(room) { %>
+                        <option value="<%= room._id %>" data-price="<%= room.price %>"><%= room.type %></option>
+                    <% }) %>
+                </select>
+            </div>
+
+
+            <div class="location-map-container">
+                <!-- Google Map iframe -->
+                <div class="google-map">
+                    <iframe src="<%= properties.map %>" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                
+                <!-- Location details -->
+                <div class="location-details">
+                    <h3><strong>Location:</strong></h3>
+                    <% properties.location.forEach(function(loc) { %>
+                        <pre><b><p class="location-item"><%= loc %></p></b></pre>
+                    <% }) %>
+                </div>
+            </div>
+            <div class="room-price">
+                <p><strong>Rent:</strong> <span id="roomPrice"><%= properties.rooms[0].price %></span> per Month</p>
+            </div>
+
+            
+            <div class="book-now-container">
+                <button class="book-now" onClick="bookButton()">Book Now</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fullscreen modal -->
+    <div id="fullScreenModal" class="modal">
+        <span class="close" onclick="closeFullScreen()">&times;</span>
+        <img class="modal-content" id="fullScreenImage">
+    </div>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('#slider figure img');
+        const totalSlides = slides.length;
+
+        function moveSlide(n) {
+            currentSlide = (currentSlide + n + totalSlides) % totalSlides;
+            document.querySelector('#slider figure').style.transform = `translateX(-${currentSlide * 100}%)`;
+        }
+
+        // Function for auto sliding
+        function autoSlide() {
+            moveSlide(1);
+        }
+
+        // Set interval for auto sliding (change every 3 seconds)
+        let slideInterval = setInterval(autoSlide, 3000);
+
+        // Pause auto sliding when user interacts with buttons
+        function pauseAutoSlide() {
+            clearInterval(slideInterval);
+            slideInterval = setInterval(autoSlide, 3000); // Resume auto-slide after the next action
+        }
+
+        document.querySelector('.prev').addEventListener('click', pauseAutoSlide);
+        document.querySelector('.next').addEventListener('click', pauseAutoSlide);
+
+        // Open full screen when image is clicked
+        function openFullScreen(img) {
+            const modal = document.getElementById("fullScreenModal");
+            const modalImg = document.getElementById("fullScreenImage");
+            modal.style.display = "flex";  // Changed to flex for centering
+            modalImg.src = img.src;
+            document.querySelector('.prev').style.display = 'none';
+            document.querySelector('.next').style.display = 'none';
+        }
+
+        // Close full screen
+        function closeFullScreen() {
+            const modal = document.getElementById("fullScreenModal");
+            modal.style.display = "none";
+            document.querySelector('.prev').style.display = 'block';
+            document.querySelector('.next').style.display = 'block';
+        }
+
+        // Close modal when clicking outside of the image
+        window.onclick = function(event) {
+            const modal = document.getElementById("fullScreenModal");
+            if (event.target == modal) {
+                closeFullScreen();
+            }
+        }
+    </script>
+
+
+<!-- <script>
+    const bookButton = (roomID) => {
+        console.log(roomID);
+        roomID = roomID[0];
+        const queryString = `roomID=${roomID}`;
+        window.location.href = `/booking?${queryString}`;
+    };
+</script> -->
+
+<script>
+    let selectedRoomID;
+
+    // Function to update room ID and price
+    function updateRoomIDAndPrice() {
+        const roomTypeSelect = document.getElementById('roomType');
+        selectedRoomID = roomTypeSelect.value;
+        const selectedPrice = roomTypeSelect.options[roomTypeSelect.selectedIndex].getAttribute('data-price');
+        document.getElementById('roomPrice').innerText = selectedPrice;
+    }
+
+    // Book Button function to redirect with selected room ID
+    function bookButton() {
+        if (selectedRoomID) {
+            console.log(selectedRoomID);
+            const queryString = `roomID=${selectedRoomID}`;
+            window.location.href = `/booking?${queryString}`;
+        } else {
+            alert('Please select a room type.');
+        }
+    }
+
+    // Initialize the room ID and price with the first option's value
+    document.addEventListener('DOMContentLoaded', () => {
+        updateRoomIDAndPrice();
+    });
+</script>
+</body>
+</html>

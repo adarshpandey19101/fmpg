@@ -1,0 +1,271 @@
+/* General body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Slider styling */
+/* Slider styling */
+/* Updated Slider styling */
+div#slider {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    margin: 30px auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    min-height: 350px;
+    max-height: 600px;
+}
+
+div#slider figure {
+    position: relative;
+    margin: 0;
+    left: 0;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%; /* Ensure the figure takes up the full width */
+}
+
+div#slider figure img {
+    width: 100%; /* Each image takes up 100% of the slider width */
+    flex-shrink: 0; /* Prevent images from shrinking */
+    min-height: 350px;
+    max-height: 600px;
+    object-fit: fill; /* Cover the area while maintaining aspect ratio */
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    z-index: 100;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+button.prev:hover, button.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Property Section */
+.property {
+    background-color: #ffffff;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 900px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Property Heading */
+.property h1 {
+    font-size: 2.5em;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: 'Helvetica', sans-serif;
+}
+
+/* Property Card Styling */
+.property-card {
+    border: 1px solid #e3e6ea;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f7f9fc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Property Details Styling */
+.property-card h2 {
+    font-size: 1.8em;
+    color: #34495e;
+    margin-bottom: 15px;
+}
+
+.property-card p {
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+
+/* Strong styling for labels */
+.property-card p strong {
+    color: #3498db;
+}
+
+/* Property Images Styling */
+.property-images {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.property-images img {
+    width: calc(33.333% - 10px);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.property-images img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Description Paragraph */
+.property-card p:last-child {
+    margin-top: 20px;
+    font-size: 1em;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Fullscreen Modal Styling */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0, 0, 0, 0.9); 
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #ccc;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Styling for the amenities as block elements */
+.amenities {
+    margin: 15px 0;
+    padding: 10px 0;
+}
+
+.amenity {
+    display: block;
+    background-color: #e0f7fa;
+    color: #00796b;
+    padding: 8px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the Book Now button */
+.book-now-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.book-now {
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.book-now:hover {
+    background-color: #2980b9;
+}
+
+/* Ensure the slider images have a minimum height */
+div#slider figure img {
+    min-height: 350px;
+}
+
+
+/* Container for Location and Google Map */
+/* Default styling for desktop/laptop/tablet */
+.location-map-container {
+    display: flex;
+    align-items: flex-start;
+    margin: 15px 0;
+    gap: 15px;
+    flex-direction: row-reverse; /* Side-by-side layout */
+}
+
+/* For mobile devices, ensure map goes below location details */
+@media only screen and (max-width: 768px) {
+    .location-map-container {
+        flex-direction: column-reverse; /* Stacks the map below the location details */
+    }
+
+    .google-map, .location-details {
+        max-width: 100%; /* Ensure both map and location take full width */
+        margin: 0; /* Remove margin to align them properly */
+    }
+}
+
+
+/* Google Map iframe styling */
+.google-map {
+    flex: 1;
+    max-width: 300px;
+}
+
+/* Location details styling */
+.location-details {
+    flex: 2;
+}
+
+.location-details p {
+    margin: 5px 0;
+    font-size: 1.1em;
+    line-height: 1.4;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bookings</title>
+  <style>
+    #flash-message {
+      display: none;
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      z-index: 1000;
+    }
+  </style>
+</head>
+<body>
+  <div id="flash-message"></div>
+
+  <script>
+    function showFlashMessage(message, style) {
+      const flashMessageDiv = document.getElementById('flash-message');
+      flashMessageDiv.innerText = message;
+
+      // Apply styles
+      for (const [key, value] of Object.entries(style)) {
+        flashMessageDiv.style[key] = value;
+      }
+
+      // Display the message
+      flashMessageDiv.style.display = 'block';
+
+      // Hide the message after 4 seconds
+      setTimeout(() => {
+        flashMessageDiv.style.display = 'none';
+      }, 4000);
+    }
+
+    // Example usage with fetched data
+    fetch('/api/bookings')
+      .then(response => response.json())
+      .then(data => {
+        if (data.message) {
+          showFlashMessage(data.message, data.style);
+        }
+      })
+      .catch(error => console.error('Error fetching bookings:', error));
+  </script>
+</body>
+</html>

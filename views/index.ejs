@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>FMPG</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <!-- <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet"> -->
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark px-5 d-none d-lg-block">
+        <div class="row gx-0">
+            <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center" style="height: 45px;">
+                    <small class="me-3 text-light"><i class="fa fa-map-marker-alt me-2"></i>UIET HOSHIARPUR </small>
+                    <small class="me-3 text-light"><i class="fa fa-phone-alt me-2"></i>+917321835093</small>
+                    <small class="text-light"><i class="fa fa-envelope-open me-2"></i>fmpg974@gmail.com</small>
+                </div>
+            </div>
+            <div class="col-lg-4 text-center text-lg-end">
+                <div class="d-inline-flex align-items-center" style="height: 45px;">
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=" https://x.com/Find_My_PG " target="_blank"><i class="fab fa-twitter fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" target="_blank" href=" https://www.facebook.com/profile.php?id=61564104987167 "><i class="fab fa-facebook-f fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" target="_blank" href=" https://www.linkedin.com/company/findmypg/" ><i class="fab fa-linkedin-in fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" target="_blank" href="  https://www.instagram.com/f_m_pg?utm_source=qr&igsh=MTl4bm82anA5dmt4aA=="><i class="fab fa-instagram fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle" target="_blank" href="http://www.youtube.com/@FMPG"><i class="fab fa-youtube fw-normal"></i></a> </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar & Hero Start -->
+    <div class="container-fluid position-relative p-0">
+        <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+            <a href="" class="navbar-brand p-0">
+                <h1 class="text-primary m-0"><i class="fa"><img src="img/Screenshot_2024-08-07_at_4.28.55_PM-removebg-preview.png" alt=""></i>FMPG</h1>
+                
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="index" class="nav-item nav-link active">Home</a>
+                    <a href="about" class="nav-item nav-link">About</a>
+                    <a href="service" class="nav-item nav-link">Services</a>
+                    <!-- <a href="package.html" class="nav-item nav-link">Packages</a> -->
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="destination" class="dropdown-item">Destination</a>
+                            <a href="booking" class="dropdown-item">Booking</a>
+                            <a href="team" class="dropdown-item">Team</a>
+                        </div>
+                    </div>
+                    <a href="contact" class="nav-item nav-link">Contact</a>
+                </div>
+                <!-- <a href="/login" class="btn btn-primary rounded-pill py-2 px-4">Login</a> -->
+                <a href="/profile" class="btn btn-primary rounded-pill py-2 px-4"><i class="fa-regular fa-user"></i></a>
+            </div>
+        </nav>
+
+        <div class="container-fluid bg-primary py-5 mb-5 hero-header">
+            <div class="container py-5">
+                <div class="row justify-content-center py-5">
+                    <div class="col-lg-10 pt-lg-5 mt-lg-5 text-center">
+                        <h1 class="display-3 text-white mb-3 animated slideInDown">Enjoy Your Hussle free leaving </h1>
+                        <p class="fs-4 text-white mb-4 animated slideInDown">Your home away from home, where comfort meets convenience!</p>
+                        <div class="position-relative w-75 mx-auto animated slideInDown">
+                            <input class="form-control border-0 rounded-pill w-100 py-3 ps-4 pe-5" id="input"  type="text" placeholder="Eg: Delhi" autocapitalize="on">
+                            <button type="button" class="btn  btn-primary rounded-pill py-2 px-4 position-absolute top-0 end-0 me-2" id="search-btn" style="margin-top: 7px;">Search</button>
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar & Hero End -->
+
+
+    <!-- About Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="img-fluid position-absolute w-100 h-100" src="img/about.jpg" alt="" style="object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <h6 class="section-title bg-white text-start text-primary pe-3">About Us</h6>
+                    <h1 class="mb-4">Welcome to <span class="text-primary">FMPG</span></h1>
+                    <p class="mb-4">FMPG your premier choice for hassle-free and comfortable hostel living! We pride ourselves on creating a home away from home, offering you a perfect blend of convenience, security, and community. Whether you're a student, a working professional, or a traveler. Join us and experience a new standard of living where comfort meets convenience and every stay feels like home.</p>
+                    <p class="mb-4">Our single rooms are thoughtfully designed to offer you maximum comfort and privacy. Each room is fully furnished with a cozy bed, a spacious wardrobe, a study desk, and ample lighting to create an ideal environment for both relaxation and productivity. With high-speed internet, air conditioning, and a dedicated bathroom, you can enjoy all the comforts of home. </p>
+                    <div class="row gy-2 gx-4 mb-4">
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Handpicked PGs</p>
+                        </div>
+                        <div class="col-sm-6">
+                           <!-- <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>First Class Flights</p> -->
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>24/7 Service</p>
+                            
+                        </div>
+                        <div class="col-sm-6">
+                            <!-- <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Latest Model Vehicles</p> -->
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Hassle free booking process</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <!-- <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>5 Star Accommodations</p> -->
+                        </div>
+                    </div>
+                    <a class="btn btn-primary py-3 px-5 mt-2" href="">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Service Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3">Services</h6>
+                <h1 class="mb-5">Our Services</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-globe text-primary mb-4"></i>
+                            <h5>Single Room PG</h5>
+                            <p>Our single rooms are thoughtfully designed to offer you maximum comfort and privacy.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-hotel text-primary mb-4"></i>
+                            <h5>Double Room PG </h5>
+                            <p>Awesome Room with attach bathroom , Start living with your bestfriend</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-hotel text-primary mb-4"></i>
+                            <h5>Flat</h5>
+                            <p>Start your hussle free living with family or friend</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-hotel text-primary mb-4"></i>
+                            <h5>Hostel</h5>
+                            <p>Take experiance of best living and hygenic food</p>
+                        </div>
+                    </div>
+                </div>
+               
+
+
+
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+
+    <!-- Destination Start -->
+
+
+
+    <!-- Destination Start -->
+
+
+    <!-- Package Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3">Best rooms</h6>
+                <h1 class="mb-5">Top Rooms</h1>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <!-- <a href="../Readmore/Radhe-Shyam-PG"> -->
+                    <div class="package-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/radheshyam pg.jpg" alt="">
+                        </div>
+                        <div class="d-flex border-bottom" style="color: #808b8d;">
+                            <small class="flex-fill text-center border-end py-2">Shared Room</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt text-primary me-2"></i>1 Month</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>2 Person</small>
+                        </div>
+                        <div class="text-center p-4">
+                            <h3 class="mb-0">RadheShyam PG</h3>
+                            <div class="mb-3">
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                            </div>
+                            <p style="color: #808b8d;"> Each room is fully furnished with a cozy bed, a spacious wardrobe, a study desk, and ample lighting to create an ideal environment for both relaxation and productivity. With high-speed internet, air conditioning, and a dedicated bathroom, you can enjoy all the comforts of home.</p>
+                            <div class="d-flex justify-content-center mb-2">
+                                <!-- <a href="../Readmore/Radhe-Shyam-PG" class="btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Read More</a> -->
+                                <button class="book-btn btn-primary btn " style="border-radius: 30px;" id="book-btn" onclick="readmore_R()">Book Now</button>
+                                <script>
+                                    const readmore_R = () => {
+                                        const propertyID = "66cf8d9f028162a0701ff6f4";
+                                        const queryString = `PropertyID=${propertyID}`;
+                                        window.location.href = `/readmore?${queryString}`;
+                                    };
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="package-item">
+
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="PG-photos/sahara outside.jpg" alt="">
+                        </div>
+                        <div class="d-flex border-bottom" style="color: #808b8d;">
+                            <small class="flex-fill text-center border-end py-2">Shared Room</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt text-primary me-2"></i>1 Month</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>2 Person</small>
+                        </div>
+                        <div class="text-center p-4">
+                            <h3 class="mb-0">Sahara PG</h3>
+                            <div class="mb-3">
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                            </div>
+                            <p style="color: #808b8d;">Our double rooms are designed to provide a spacious and cozy living environment for two. Each room is fully furnished with two comfortable beds, ample storage space, study desks, and plenty of natural light. </p>
+                            <div class="d-flex justify-content-center mb-2">
+                                <!-- <a href="#" class="btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Read More</a> -->
+                                <button class="book-btn btn-primary btn " style="border-radius: 30px;" id="book-btn" onclick="readmore_S()">Book Now</button>
+                                <script>
+                                    const readmore_S = () => {
+                                        const propertyID = "66cf92976bf755e4d885c799";
+                                        const queryString = `PropertyID=${propertyID}`;
+                                        window.location.href = `/readmore?${queryString}`;
+                                    };
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="package-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="PG-photos/mundi outside.jpg" alt="">
+                        </div>
+                        <div class="d-flex border-bottom" style="color: #808b8d;">
+                            <small class="flex-fill text-center border-end py-2">Hostel</small>
+                            <small class="flex-fill text-center border-end py-2">1 Month</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>2 Person</small>
+                        </div>
+                        <div class="text-center p-4">
+                            <h3 class="mb-0">Divine Home</h3>
+                            <div class="mb-3">
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                            </div>
+                            <p style="color: #808b8d;">Our hostel offers clean and comfortable accommodations with secure facilities, friendly staff, and vibrant common areas that foster social interactions. It is conveniently located, providing Hygienic food and additional perks like free Wi-Fi and organized activities.</p>
+                            <div class="d-flex justify-content-center mb-2">
+                                <!-- <button class="btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;" onclick="readmore()">Read More</button> -->
+                                <button class="book-btn btn-primary btn " style="border-radius: 30px;" id="book-btn" onclick="readmore_D()">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <script>
+                    const readmore_D = () => {
+                        const propertyID = "66cf6e331ae3bc6245e85ace";
+                        const queryString = `PropertyID=${propertyID}`;
+                        window.location.href = `/readmore?${queryString}`;
+                    };
+                </script>
+                
+            </div>
+        </div>
+    </div>
+    <!-- Package End -->
+
+
+    <!-- Booking Start -->
+    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="booking p-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-md-6 text-white">
+                       <h6 class="text-white text-uppercase">Booking</h6>
+                        <h1 class="text-white mb-4">Online Booking</h1>
+                        <p class="mb-4">Online booking guarantees the protection of personal and financial information through encrypted transactions, secure payment gateways, and strict privacy policies, ensuring a seamless and trustworthy reservation process.</p>
+                        <p class="mb-4">Secure your booking instantly with Online Payment</p>
+                        <!-- <a class="btn btn-outline-light p y-3 px-5 mt-2" href="">Read More</a> -->
+                    </div>
+                    <div class="col-md-6">
+                        <h2 class="text-white mb-4" href="booking">Book your room</h2>
+                        <form action="/api/bookings" method="Post">
+                            <div class="row g-3">
+                                <!-- <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control bg-transparent" id="name" placeholder="Your Name">
+                                        <label for="name">Your Name</label>
+                                    </div>
+                                </div> -->
+                                <!-- <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="number" class="form-control bg-transparent" id="Mobile" placeholder="Mobile">
+                                        <label for="Mobile">Your mobile number</label>
+                                    </div>
+                                </div> -->
+                                <!-- <div class="col-md-6">
+                                    <div class="col-md-6">
+                                        <div class="form-floating date" id="date3" data-target-input="nearest">
+                                            <input type="text" class="form-control bg-transparent datetimepicker-input" id="datetime" placeholder="Date & Time" data-target="#date3" data-toggle="datetimepicker" />
+                                            <label for="datetime">Date & Time</label>
+                                        </div>
+                                    </div>
+                                </div> -->
+                                <!-- <div class="col-md-6">
+                                    <div class="col-md-6">
+                                        <div class="form-floating date" id="date2" data-target-input="nearest">
+                                            <input type="text" class="form-control bg-transparent datetimepicker-input" id="datetime" placeholder="Date & Time" data-target="#date3" data-toggle="datetimepicker" />
+                                            <label for="datetime">Date & Time</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                 -->
+                                <!-- <div class="col-md-6">
+                                    <div class="form-floating date" id="date3" data-target-input="nearest">
+                                        <input type="date" class="form-control bg-transparent datetimepicker-input" id="date" placeholder="End_Date" data-target="#date3"  />
+                                        <label for="date">End_Date</label>
+                                    </div>
+                                </div> -->
+                                
+                                <!-- <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <select class="form-select bg-transparent" id="select1">
+                                            <option value="1">Single Room</option>
+                                            <option value="2">Double Room</option>
+                                            <option value="3">Hostel</option>
+                                        </select>
+                                        <label for="select1">select room type</label>
+                                    </div>
+                                </div> -->
+
+                                <!-- <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <select class="form-select bg-transparent" id="select1">
+                                            <option value="1">white-house</option>
+                                            <option value="2">Double Room</option>
+                                            <option value="3">Hostel</option>
+                                        </select>
+                                        <label for="select1">select property</label>
+                                    </div>
+                                </div> -->
+
+                                <!-- <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control bg-transparent" placeholder="Special Request" id="message" style="height: 100px"></textarea>
+                                        <label for="message">Special Request</label>
+                                    </div>
+                                </div> -->
+                                <div class="col-12">
+                                    <a class="btn btn-outline-light w-100 py-3" type="submit" id="resister" href="search-page">Book Now</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Booking Start -->
+
+
+    <!-- Process Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center pb-4 wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3">Process</h6>
+                <h1 class="mb-5">3 Easy Steps</h1>
+            </div>
+            <div class="row gy-5 gx-4 justify-content-center">
+                <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="position-relative border border-primary pt-5 pb-4 px-4">
+                        <div class="d-inline-flex align-items-center justify-content-center bg-primary rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
+                            <i class="fa fa-globe fa-3x text-white"></i>
+                        </div>
+                        <h5 class="mt-4">Choose A Room</h5>
+                        <hr class="w-25 mx-auto bg-primary mb-1">
+                        <hr class="w-50 mx-auto bg-primary mt-0">
+                        <p class="mb-0">Simple select a room where you want to live</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="position-relative border border-primary pt-5 pb-4 px-4">
+                        <div class="d-inline-flex align-items-center justify-content-center bg-primary rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
+                            <i class="fa fa-dollar-sign fa-3x text-white"></i>
+                        </div>
+                        <h5 class="mt-4">Pay Online</h5>
+                        <hr class="w-25 mx-auto bg-primary mb-1">
+                        <hr class="w-50 mx-auto bg-primary mt-0">
+                        <p class="mb-0">Pay through UPI</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="position-relative border border-primary pt-5 pb-4 px-4">
+                        <div class="d-inline-flex align-items-center justify-content-center bg-primary rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
+                            <i class="fa fa-3x fa-hotel text-primary mb-4"></i>
+                        </div>
+                        <h5 class="mt-4">Move In Today</h5>
+                        <hr class="w-25 mx-auto bg-primary mb-1">
+                        <hr class="w-50 mx-auto bg-primary mt-0">
+                        <p class="mb-0">Start Hussle-free living from today </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Process Start -->
+
+
+    <!-- Team Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3">Team</h6>
+                <h1 class="mb-5">Core Team Member</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/team-1.jpg" alt="">
+                        </div>
+                        <div class="position-relative d-flex justify-content-center" style="margin-top: -19px;">
+                            <a class="btn btn-outline-light btn-social" target="_blank" href="http://www.linkedin.com/in/vivek-kumar-2055211a6"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-square mx-1" target="_blank" href="https://x.com/Vivekra90835697"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-square mx-1" target="blank" href="https://www.instagram.com/ideal_vivek/"><i class="fab fa-instagram"></i></a>
+                        </div>
+                        <div class="text-center p-4">
+                            <h5 class="mb-0">Vivek Kumar</h5>
+                            <small> Founder and CEO</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="team-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/team-2.jpg" alt="">
+                        </div>
+                        <div class="position-relative d-flex justify-content-center" style="margin-top: -19px;">
+                            <a class="btn btn-outline-light btn-social" target="_blank" href="https://www.linkedin.com/in/vikas-adhikari-646a0128b/"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-square mx-1" target="_blank" href="https://x.com/vikas11652166"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-square mx-1" target="_blank" href="https://www.instagram.com/vikasadhikari9310/"><i class="fab fa-instagram"></i></a>
+                        </div>
+                        <div class="text-center p-4">
+                            <h5 class="mb-0">Vikas Adhikari</h5>
+                            <small>Co-founder</small>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->
+
+
+    <!-- Testimonial Start -->
+    
+    <!-- Testimonial End -->
+        
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Company</h4>
+                    <a class="btn btn-link" href="about">About Us</a>
+                    <a class="btn btn-link" href="contact">Contact Us</a>
+                    <a class="btn btn-link" href="privacypolicy" target="_blank">Privacy Policy</a>
+                    <a class="btn btn-link" href="TermsAndConditions" target="_blank">Terms & Conditions</a>
+                    <a class="btn btn-link" href="FAQs">FAQs & Help</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Contact</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>UIET Hoshiarpur , india</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+917321835093</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>fmpg974@gmail.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=" https://x.com/Find_My_PG " target="_blank"><i class="fab fa-twitter fw-normal"></i></a>
+                        <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" target="_blank" href=" https://www.facebook.com/profile.php?id=61564104987167 "><i class="fab fa-facebook-f fw-normal"></i></a>
+                        <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" target="_blank" href=" https://www.linkedin.com/company/findmypg/" ><i class="fab fa-linkedin-in fw-normal"></i></a>
+                        <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" target="_blank" href="  https://www.instagram.com/f_m_pg?utm_source=qr&igsh=MTl4bm82anA5dmt4aA=="><i class="fab fa-instagram fw-normal"></i></a>
+                        <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle" target="_blank" href="http://www.youtube.com/@FMPG"><i class="fab fa-youtube fw-normal"></i></a> </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Gallery</h4>
+                    <div class="row g-2 pt-2">
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="PG-photos/radheshyam pg.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="PG-photos/mundi outside.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="PG-photos/sahara outside.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="PG-photos/heaven pg main gate.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="PG-photos\white house pg.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="PG-photos/shivalik main gate.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Newsletter</h4>
+                    <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                    <div class="position-relative mx-auto" style="max-width: 400px;">
+                        <input class="form-control border-primary w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="index">FMPG</a>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <div class="footer-menu">
+                            <a href="index">Home</a>
+                            <a href="404">Cookies</a>
+                            <a href="contact">Help</a>
+                            <!-- <a href="">FQAs</a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    let button = document.querySelector("#search-btn");
+    button.addEventListener("click", function() {
+        let input = document.getElementById("input");
+        // Convert the input value to lowercase
+        let inputValue = input.value.trim().toLowerCase();
+        
+        if (inputValue === "hoshiarpur") {
+            console.log("clicked");
+            // Optionally open the Search-page.html in a new tab
+            window.open("search-page", "_blank");
+            input.value = "";  // Clear the input field
+        } else {
+            window.open("404");
+        } 
+    });
+});
+
+
+
+    </script>
+</body>
+
+</html>
