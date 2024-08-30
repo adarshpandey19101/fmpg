@@ -18,12 +18,11 @@
                 <img src="../images/avatar.svg">
                 <h2 class="title">Welcome</h2>
 
-                <!-- Display flash message here -->
-                <% if (typeof error !== 'undefined' && error.length > 0) { %>
+                <% if (error && error.length > 0) { %>
                     <div class="alert alert-danger">
-                      <p><%= error[0] %></p>
+                      <p><%= error[0] %></p> <!-- Display the first error message -->
                     </div>
-                  <% } %>
+                  <% } %>                  
                   
 
                 <div class="input-div one">

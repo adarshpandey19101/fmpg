@@ -174,12 +174,12 @@ router.post('/register', function(req, res) {
 router.post('/login', passport.authenticate("local", {
   successRedirect: "/index",
   failureRedirect: "/login",
-  failureFlash: "Invalid username or password."
+  failureFlash: true
 }), function(req, res) {
 });
 
 router.get('/login', function(req, res) {
-  const errorMessage = req.flash('error');
+  const errorMessage = req.flash('error',"Invalid Username and Passward");
   console.log('Flash message:', errorMessage); // Add this to debug
   res.render('login', { error: errorMessage });
 });
